@@ -21,6 +21,8 @@ public class Exercicio01 {
 		
 		float novoSalario = salario + abono;
 		
+		ler.close();
+		
 		System.out.printf("Novo Salário: R$%.2f", novoSalario);
 		
 	}

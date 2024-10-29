@@ -22,6 +22,8 @@ public class Exercicio04 {
 		System.out.println("numero4: ");
 		float numero4 = ler.nextFloat();
 		
+		ler.close();
+		
 		float calculo = (numero1 * numero2) - (numero3 * numero4);
 		System.out.printf("Cálculo: %.1f", calculo);
 

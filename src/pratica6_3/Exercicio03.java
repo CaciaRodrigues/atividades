@@ -22,6 +22,8 @@ public class Exercicio03 {
 		System.out.println("Desconstos: ");
 		float descontos = ler.nextFloat();
 		
+		ler.close();
+		
 		float salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * 5) - descontos;
 		System.out.printf("Salário Líquido: R$%.2f", salarioLiquido);
 		

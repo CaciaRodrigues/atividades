@@ -21,6 +21,8 @@ public class Exercicio02 {
 		System.out.println("Nota 4: ");
 		float nota04 = ler.nextFloat();
 		
+		ler.close();
+		
 		float notaMedia = (nota01 + nota02 + nota03 + nota04) / 4;
 		System.out.printf("Nota Média: %.1f", notaMedia);
 		
