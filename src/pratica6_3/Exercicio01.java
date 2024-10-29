@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class Exercicio01 {
 	public static void main(String[] args) {
 		
-		Scanner ler = new Scanner(System.in);
-		
-		ler.useLocale(Locale.US); // Para a variável aceitar .00
+		// Iniciando o scanner e mudando a localidade para aceitar .00
+		Scanner ler = new Scanner(System.in).useLocale(Locale.US);
 		
 		float salario;
 		float abono;
@@ -21,9 +20,9 @@ public class Exercicio01 {
 		
 		float novoSalario = salario + abono;
 		
-		ler.close();
+		ler.close(); // Fechando o scanner
 		
-		System.out.printf("Novo Salário: R$%.2f", novoSalario);
+		System.out.printf(Locale.US,"Novo Salário: $%.2f", novoSalario);
 		
 	}
 }
