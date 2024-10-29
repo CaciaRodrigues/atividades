@@ -5,6 +5,18 @@ import java.util.Scanner;
 public class LacoSwitch02 {
 
 	public static void main(String[] args) {
+		
+		System.out.println("-+-+-+-+-+-+-+-+-+- Quadro de Reajustes -+-+-+-+-+-+-+-+-+-+"
+				 		 + "\n| Código do Cargo | Cargo         | Percentual do Reajuste |"
+				 		 + "\n------------------------------------------------------------"
+				 		 + "\n| 1               | Gerente       | 10%                    |"
+				 		 + "\n| 2               | Vendedor      | 7%                     |"
+				 		 + "\n| 3               | Supervisor    | 9%                     |"
+				 		 + "\n| 4               | Motorista     | 6%                     |"
+				 		 + "\n| 5               | Estoquista    | 5%                     |"
+				 		 + "\n| 6               | Técnico de TI | 8%                     |"
+				 		 + "\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+		
 		Scanner leitor = new Scanner(System.in);
 		
 		System.out.println("Nome do colaborador: ");
