@@ -20,7 +20,7 @@ public class LacoSwitch02 {
 		Scanner leitor = new Scanner(System.in);
 		
 		System.out.println("Nome do colaborador: ");
-		leitor.skip("\\R?");
+		leitor.skip("\\R?"); 
 		String nomeColaborador = leitor.nextLine();
 		
 		System.out.println("Cargo: ");
