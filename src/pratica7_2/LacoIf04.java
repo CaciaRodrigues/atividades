@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class LacoIf04 {
 
 	public static void main(String[] args) {
+		/* REFAZER ESTE, COMPARAÇÃO DE STRING FALHA*/
 		
 		Scanner leitor = new Scanner(System.in);
 		
