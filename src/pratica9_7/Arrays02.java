@@ -39,8 +39,7 @@ public class Arrays02 {
 			}
 		}
 		
-		System.out.printf("\nSoma: %d"
-				        + "\nMédia: %.2f", soma, media);
+		System.out.printf("\nSoma: %d \nMédia: %.2f", soma, media);
 		
 		
 		leitor.close();
