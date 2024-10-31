@@ -23,45 +23,45 @@ public class LacoIf04 {
 		leitor.skip("\\R?");
 		String caracteristica03 = leitor.nextLine();
 		
-		String carnivoro = "carnívoro";
-		String onivoro = "onívoro";
-		String herbivoro = "herbívoro";
-		String hematofago = "hematófago";
+		String dietaCar= "carnívoro";
+		String dietaOni = "onívoro";
+		String dietaHerb = "herbívoro";
+		String dietaHem = "hematófago";
 		
 		
-		if (caracteristica01 == "vertebrado") {
-			if (caracteristica02 == "ave") {
-				if (caracteristica03 == carnivoro) {
+		if (caracteristica01.equals("vertebrado")) {
+			if (caracteristica02.equals("ave")) {
+				if (caracteristica03.equals(dietaCar)) {
 					System.out.println("Águia");
 				}
-				else if (caracteristica03 == onivoro) {
+				else if (caracteristica03.equals(dietaHem)) {
 					System.out.println("Pomba");
 				}
 			}
-			else if (caracteristica02 == "mamífero") {
-				if (caracteristica03 == onivoro)
+			else if (caracteristica02.equals("mamífero")) {
+				if (caracteristica03.equals(dietaOni))
 				{
 					System.out.println("Homem");
 				}
-				else if (caracteristica03 == herbivoro) {
+				else if (caracteristica03.equals(dietaHerb)) {
 					System.out.println("Vaca");
 				}
 			}
 		}
-		else if (caracteristica01 == "invertebrado") {
-			if (caracteristica02 == "inseto") {
-				if (caracteristica03 == hematofago) {
+		else if (caracteristica01.equals("invertebrado")) {
+			if (caracteristica02.equals("inseto")) {
+				if (caracteristica03.equals(dietaHem)) {
 					System.out.println("Pulga");
 				}
-				else if (caracteristica03 == herbivoro) {
+				else if (caracteristica03.equals(dietaHerb)) {
 					System.out.println("Lagarta");
 				}
 			} 
-			else if (caracteristica02 == "anelídeo") {
-				if (caracteristica03 == hematofago) {
+			else if (caracteristica02.equals("anelídeo")) {
+				if (caracteristica03.equals(dietaHem)) {
 					System.out.println("Sanguessuga");
 				} 
-				else if (caracteristica03 == onivoro) {
+				else if (caracteristica03.equals(dietaOni)) {
 					System.out.println("Minhoca");
 				}
 			}
