@@ -5,11 +5,6 @@ import java.util.Scanner;
 public class LacoSwitch03 {
 
 	public static void main(String[] args) {
-		//ler dois numeros float
-		// ler o código da operação desejada (int)
-		// montar a operação
-		//mostrar operação e resultado
-		// caso operação invalida mostrar mensagem
 		
 		Scanner leitor = new Scanner(System.in);
 		
