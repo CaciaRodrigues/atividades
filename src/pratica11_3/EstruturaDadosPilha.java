@@ -18,36 +18,36 @@ public class EstruturaDadosPilha {
 
 		// Menu de opções
 		System.out.printf("*********************************************"
-						+ "\n*                                           *" 
-						+ "\n*       1 - Adicionar Livro na pilha        *"
-						+ "\n*       2 - Listar todos os Livros          *" 
-						+ "\n*       3 - Retirar Livro da pilha          *"
-						+ "\n*       0 - Sair                            *" 
-						+ "\n*                                           *"
-						+ "\n*********************************************");
+				+ "\n*                                           *" 
+				+ "\n*       1 - Adicionar Livro na pilha        *"
+				+ "\n*       2 - Listar todos os Livros          *" 
+				+ "\n*       3 - Retirar Livro da pilha          *"
+				+ "\n*       0 - Sair                            *" 
+				+ "\n*                                           *"
+				+ "\n*********************************************");
 
 		do {
 			System.out.println("\nEntre com a opção desejada: ");
 			opcao = leitor.nextInt();
 			leitor.nextLine();
 			System.out.println("\n*********************************************");
-			
+
 			switch (opcao) {
-			
+
 			case 1:
 				// Adicionar Livros a pilha
 				System.out.println("\nDigite o nome do Livro: ");
 				nomeLivro = leitor.nextLine();
 				pilhaLivros.add(nomeLivro);
-				
-				// Lista a pilha com o novo livro adicionado 
+
+				// Lista a pilha com o novo livro adicionado
 				System.out.println("\nPilha: \n");
-				for(String livro : pilhaLivros) {
+				for (String livro : pilhaLivros) {
 					System.out.println(livro);
 				}
 				System.out.println("\nLivro adicionado!");
 				break;
-			
+
 			case 2:
 				// Lista os livros da pilha
 				System.out.println("\nLista de Livros na Pilha: \n");
@@ -55,17 +55,16 @@ public class EstruturaDadosPilha {
 					System.out.println(livro);
 				}
 				break;
-				
+
 			case 3:
 				// Remove o livro do topo da pilha, caso vazia, avisa o usuário
 				if (pilhaLivros.isEmpty()) {
 					System.out.println("\nA pilha está vazia!");
-				}
-				else {
+				} else {
 					pilhaLivros.pop();
-					
+
 					System.out.println("\nFila: \n");
-					for(String livro : pilhaLivros) {
+					for (String livro : pilhaLivros) {
 						System.out.println(livro);
 					}
 					System.out.println("\nUm Livro foi retirado da pilha!");
@@ -78,9 +77,9 @@ public class EstruturaDadosPilha {
 			default:
 				// Caso o usuário digite uma opção inválida
 				System.out.println("Opção Inválida! Tente Novamente.");
-			}			
+			}
 		} while (opcao != 0);
-		
+
 		leitor.close();
 
 	}
