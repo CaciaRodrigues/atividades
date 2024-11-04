@@ -65,7 +65,12 @@ public class EstruturaDadosFila {
 					System.out.println("A Fila está vazia!");
 				} else {
 					filaBanco.remove();
-					System.out.println("O Cliente foi chamado!");
+					
+					System.out.println("\nFila: \n");
+					for(String cliente : filaBanco) {
+						System.out.println(cliente);
+					}
+					System.out.println("\nO Cliente foi chamado!");
 				}
 				break;
 
@@ -76,7 +81,7 @@ public class EstruturaDadosFila {
 
 			default:
 				// Caso o usuário digite uma opção inválida
-				System.out.println("Opção Inválida! Tente Novamente");
+				System.out.println("Opção Inválida! Tente Novamente.");
 			}
 		} while (opcao != 0); // Finaliza o Programa
 		
